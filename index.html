@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/main.css">
+        <script src='scripts/main.js' defer></script>
+    </head>
+    <body>
+        <template id = "template">
+            <div class = "container__element">
+                <p class = "element__month"></p>
+                <div class = "element__days">
+                    <div class = "days__work day">пн</div>
+                    <div class = "days__work day">вт</div>
+                    <div class = "days__work day">ср</div>
+                    <div class = "days__work day">чт</div>
+                    <div class = "days__work day">пт</div>
+                    <div class = "days__free day">сб</div>
+                    <div class = "days__free day">вс</div>
+                </div>
+                <div class = "element__numbers">
+
+                </div>
+            </div>
+        </template>
+
+        <div class = "backdrop"></div>
+        <div class = "modal"></div>
+
+        <main class = "main">
+            <h1 class = "main__title">Бронирование даты</h1>
+            <h3 class = "main__subtitle">Тестовое задание на должность fullstack-разработчика</h3>
+            <div class = "main__container">
+                
+            </div>
+            <div class = "main__reserv">
+                <p>Укажите телефон:</p>
+                <input type = "tel" class = "reserv__tel" placeholder="+7 (___) ___-__-__"/>
+                <button class = "reserv__submit">Забронировать</button>
+                <button class = "unreserv">Отменить всю бронь</button>
+            </div>
+        </main>
+    </body>
+</html>
