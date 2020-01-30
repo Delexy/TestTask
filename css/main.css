@@ -127,6 +127,7 @@
     border: 1px solid #68a977;
     color: white;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+    margin: 0.2rem 0rem;
 }
 
 .reserv__submit:hover,
@@ -161,13 +162,13 @@
     height: max-content;
     max-width: 70%;
     position: fixed;
+    left: 20%;
     z-index: 2;
     color: #0d592d;
     font-size: 3rem;
     font-weight: bold;
     background-color: #ebf5ec;
     border-radius: 10px;
-    left: 15%;
     padding: 4rem;
     transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
 }
@@ -181,7 +182,6 @@
     /* display: flex; */
     opacity: 1;
     top: 25%;
-    vertical-align: baseline;
 }
 
 /* Mobile */
@@ -201,6 +201,10 @@
     .main__subtitle{
         margin-bottom: 2rem;
     }
+
+    .modal {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -213,5 +217,9 @@
         font-size: 0.8rem;
         text-align: left;
         margin-bottom: 1rem;
+    }
+    
+    .modal {
+        font-size: 1.2rem;
     }
 }

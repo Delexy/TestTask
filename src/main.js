@@ -29,7 +29,7 @@ function getFirstDays() {
 function showModalWindow (text) {
     const modal = document.querySelector('.modal');
     const backdrop = document.querySelector('.backdrop');
-    modal.style.display = "flex";
+    modal.style.display = "block";
     backdrop.style.display = "block";
     
     modal.textContent = text;
@@ -134,6 +134,7 @@ function renderDesktopPage() {
     container.querySelectorAll(".days__day.active").forEach(day => {
         day.classList.remove('active');
     });
+    showModalWindow("Бронирование отменено");
   });
 }
 
